@@ -4,7 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    padding-bottom:52%;
+    padding-bottom:51%;
 }
 .overlay{
     background-color: rgb(0,0,0,0.3);
@@ -28,4 +28,9 @@
     border: 2px solid black;
     border-radius: 50%;
     float: left;
+}
+
+table,th,td{
+    border-collapse: collapse;
+    border:2px solid black;
 }
