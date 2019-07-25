@@ -34,3 +34,7 @@ table,th,td{
     border-collapse: collapse;
     border:2px solid black;
 }
+
+#table1,#table2,#table3,#table4,#table5,#table6{
+    display:hide;
+}
