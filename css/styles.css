@@ -73,10 +73,13 @@ label{
     font-size:30px;
     font-family: 'Butcherman', cursive;
 }
-.menu{
-    background-image: url("../images/flower.jpeg");
-    background-attachment: fixed;
+#menu{
+    background-image: url("../images/flower.jpg");
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    margin-top:10%;
+    
 }
 table,th,td{
     border-collapse: collapse;
