@@ -1,3 +1,6 @@
+*{
+    background-color: orange;
+}
 #home{
     background-image: url("../images/pizza.jpg");
     background-position: center;
@@ -23,18 +26,46 @@
     padding-left:15%;
     color: orange;
 }
-
-.jumbotron img{
+.logo{
     border: 2px solid black;
-    border-radius: 50%;
+    border-radius:80%;
     float: left;
+    height: 200px;
+    width: 200px;
 }
-
+.move{
+    padding-left: 10%;
+    padding-top: 5%;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    color:white;
+}
+.col-md-4,img{
+    height:300px;
+    width:300px;
+}
+#image1,#image2,#image3,#image4,#image5,#image6{
+    padding-left:10%;
+    padding-top:5%
+}
+#about{
+    padding-top:5%;
+}
+#form{
+    
+}
 table,th,td{
     border-collapse: collapse;
     border:2px solid black;
 }
-
-#table1,#table2,#table3,#table4,#table5,#table6{
-    display:hide;
+table, tr{
+    width:200px;
+    padding-top:5%;
+    padding-left:5%;
+}
+.footer{
+    float:right;
+    padding-right: 20%;
 }
