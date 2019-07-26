@@ -1,6 +1,7 @@
-*{
+.over{
     background-color: orange;
 }
+
 #home{
     background-image: url("../images/pizza.jpg");
     background-position: center;
@@ -37,16 +38,27 @@
     padding-left: 10%;
     padding-top: 5%;
 }
+.text,.welcome{
+    float:left;
+    font-size:50px;
+    font-family: 'Butcherman', cursive;
+    color: white;
+}
+.text{
+    display: inline-block;
+}
 h2{
+    text-decoration: underline;
+    font-family: 'Butcherman', cursive;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     color:white;
 }
-.col-md-4,img{
-    height:300px;
-    width:300px;
+.col-md-3,img{
+    height:200px;
+    width:280px;
 }
-#image1,#image2,#image3,#image4,#image5,#image6{
+#image1,#image2,#image3,#image4,#image5,#image6,#image7,#image8{
     padding-left:10%;
     padding-top:5%
 }
@@ -54,7 +66,17 @@ h2{
     padding-top:5%;
 }
 #form{
-    
+    padding-left:35%;
+    padding-right:5%;
+}
+label{
+    font-size:30px;
+    font-family: 'Butcherman', cursive;
+}
+.menu{
+    background-image: url("../images/flower.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 table,th,td{
     border-collapse: collapse;
@@ -65,7 +87,10 @@ table, tr{
     padding-top:5%;
     padding-left:5%;
 }
+#table4,#table5,#table6{
+    margin-top:10px;
+}
 .footer{
     float:right;
-    padding-right: 20%;
+    padding-right: 30%;
 }
