@@ -8,7 +8,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    padding-bottom:52%;
+    padding-bottom:48%;
 }
 .overlay{
     background-color: rgb(0,0,0,0.3);
@@ -67,7 +67,7 @@ h2{
 }
 #form{
     padding-left:35%;
-    padding-right:15%;
+    /* padding-right:5%; */
 }
 label{
     font-size:30px;

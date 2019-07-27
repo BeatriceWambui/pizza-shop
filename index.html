@@ -88,8 +88,8 @@
                                                 <td>BBQ Steak</td>
                                                 <td>2</td>
                                                 <td>Regular=500ksh <br>
-                                                    Meduim=750ksh <br>
-                                                    Mega=950ksh 
+                                                    Meduim=700ksh <br>
+                                                    Mega=1000ksh</td>
                                                 </td>
                                             </tr>
                                         </table>
@@ -104,9 +104,9 @@
                                             <tr>
                                                 <td>Chicken Macon BBQ</td>
                                                 <td>3</td>
-                                                <td>Regular=700ksh <br>
-                                                        Meduim=950ksh <br>
-                                                        Mega=1150ksh</td>
+                                                <td>Regular=500ksh <br>
+                                                    Meduim=700ksh <br>
+                                                    Mega=1000ksh</td>
                                             </tr>
                                         </table>
                             </div>
@@ -121,10 +121,10 @@
                                                 </tr>
                                                 <tr>
                                                     <td>chiken & beef pepperoni</td>
-                                                    <td>4</td>
-                                                    <td>Regular=800ksh <br>
-                                                            Meduim=1050ksh <br>
-                                                            Mega=1450ksh</td>
+                                                    <td>2</td>
+                                                    <td>Regular=500ksh <br>
+                                                        Meduim=700ksh <br>
+                                                        Mega=1000ksh</td>
                                                 </tr>
                                             </table>
                                 </div>
@@ -138,9 +138,9 @@
                                                 <tr>
                                                     <td>Chicken Tikka</td>
                                                     <td>2</td>
-                                                    <td>Regular=600ksh <br>
-                                                        medium=850ksh <br>
-                                                        Mega=1050ksh</td>
+                                                    <td>Regular=500ksh <br>
+                                                        Meduim=700ksh <br>
+                                                        Mega=1000ksh</td>
                                                 </tr>
                                             </table>
                                 </div>
@@ -155,7 +155,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td>chicken hawaiian</td>
-                                                    <td>4</td>
+                                                    <td>3</td>
                                                     <td>Regular=500ksh <br>
                                                             Meduim=700ksh <br>
                                                             Mega=1000ksh</td>
@@ -172,9 +172,9 @@
                                                 <tr>
                                                     <td>Chicken & Mushroom</td>
                                                     <td>2</td>
-                                                    <td>Regular=450ksh <br>
-                                                            Meduim=650ksh <br>
-                                                            Mega=950ksh</td>
+                                                    <td>Regular=500ksh <br>
+                                                        Meduim=700ksh <br>
+                                                        Mega=1000ksh</td>
                                                 </tr>
                                             </table>
                                 </div>
@@ -189,40 +189,52 @@
                                 </div>
                             </div>
                             <h2> MY ORDER FORM</h2>
-                                <form  id="form">
+                                <form  id="orderform">
                                   <div class="form-group">
-                                        <label>NAME:</label> <br>
-                                        <input type="text"  id="name" placeholder="Name..."><br>
-                                        <label>EMAIL:</label> <br>
-                                        <input type="email"  id="email" placeholder="Email..."><br>
-                                        <label>LOCATION:</label> <br>
-                                        <input type="text" id="area" placeholder="enter home street..."><br>
-                                        <label>ADDRESS:</label> <br>
+                                        <label>NAME:</label>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                        <input type="text"  id="name" placeholder="Name...">  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
+                                        <label>EMAIL:</label>
+                                        <input type="email"  id="email" placeholder="Email..."><br>  &nbsp; &nbsp;
+                                        <label>LOCATION:</label> 
+                                        <input type="text" id="area" placeholder="enter home street...">
+                                        <label>ADDRESS:</label> 
                                         <input type="house address" id="house" placeholder="enter home address"><br>
-                                        <div class="form-group">
+                                        
+                                    <div class="form-group">
                                         <label>CRUST CHOISE</label> <br>
-                                        <input type="radio" name="crust" value="Original Thin Crust" > Original Thin Crust <br>
-                                        <input type="radio" name="crust" value="Pan-crust" > Pan-crust <br>
-                                        <input type="radio" name="crust" value="Gluten Free" > Gluten Free <br>
-                                        <input type="radio" name="crust" value="Gluten Free" > chees<br>
+                                        <input type="radio" name="crust" value="Original Thin Crust" id="thincrust" onclick="calculateTotal()" > Original Thin Crust (ksh 100) <br>
+                                        <input type="radio" name="crust" value="Pan-crust" id="pancrust" onclick="calculateTotal()" > Pan-crust (ksh150) <br>
+                                        <input type="radio" name="crust" value="Gluten Free" id="glutencrust" onclick="calculateTotal()" > Gluten Free (ksh 200) <br>
+                                        <input type="radio" name="crust" value="chees crust" id="cheescrust" onclick="calculateTotal()" > chees (ksh 250) <br>
                                         <label>TOPPINGS</label> <br>
-                                        <input type="checkbox" name="topping1" > Extra Cheese &nbsp; &nbsp; &nbsp;  
-                                        <input type="checkbox" name="topping2" id="">Pepperoni <br>
-                                        <input type="checkbox" name="topping3" id="">Extra tomato &nbsp; &nbsp; &nbsp; &nbsp;  
-                                        <input type="checkbox" name="topping4" id="">Mushroom <br>
-                                        <input type="checkbox" name="topping5" id="">Mexican Cheese &nbsp; 
-                                        <input type="checkbox" name="topping6" id="">Sausage <br>
-                                        <input type="checkbox" name="topping7" id="">Bell Peppers &nbsp; &nbsp; &nbsp; &nbsp;  
-                                        <input type="checkbox" name="topping8" id="">Avocado special <br>
+                                        <input type="checkbox" name="topping1" id="cheese" onclick="calculateTotal()"> Extra Cheese  (ksh200) &nbsp; &nbsp; &nbsp;  
+                                        <input type="checkbox" name="topping2" id="pepperoni" onclick="calculateTotal()">Pepperoni (ksh200) <br>
+                                        <input type="checkbox" name="topping3" id="tomato" onclick="calculateTotal()">Extra tomato  (ksh200) &nbsp; &nbsp; &nbsp; &nbsp;  
+                                        <input type="checkbox" name="topping4" id="mushroom" onclick="calculateTotal()">Mushroom  (ksh200) <br>
+                                        <input type="checkbox" name="topping5" id="mexican" onclick="calculateTotal()">Mexican Cheese  (ksh200) &nbsp; 
+                                        <input type="checkbox" name="topping6" id="sausage" onclick="calculateTotal()">Sausage  (ksh200) <br>
+                                        <input type="checkbox" name="topping7" id="bell" onclick="calculateTotal()">Bell Peppers  (ksh200) &nbsp; &nbsp; &nbsp; &nbsp;  
+                                        <input type="checkbox" name="topping8" id="avacado" onclick="calculateTotal()">Avocado special  (ksh200) <br>
+                                        <label>FLAVOR</label> 
+                                        <select id="flavor" name='size' onchange="calculateTotal()">
+                                            <option value="None">Select flavor</option>
+                                            <option value="large">Regular (Ksh.500)</option>
+                                            <option value="medium">Medium (Ksh.700)</option>
+                                            <option value="small">Mega (Ksh.1000)</option>
+                                        </select> 
+                                        <label>NO OF PIZZAS</label>  <input type="text"  name="pizzas" id="quantity" /> <br>
+                                        <div id="totalPrice"></div>
+                                        <input type='button' id='myprice' value='see-price' onclick="calculatePrice()"/>
+                                        <div class="show-total"></div>
+                                
                                         <label>Within CBD </label>
-                                        <button>delivery=200ksh</button> <br>
+                                        <button>delivery=200ksh</button>  &nbsp; &nbsp;
                                         <label>outside CBD</label>
                                         <button>delivery=400ksh</button> <br>
-                                            <label>COMMENT:</label> <br>
-                                            <textarea class="form-control" rows="5" id="message" placeholder="write a comment..."></textarea>
-                                             </div>         
+                                        
+                                    </div>         
                                  </div>
-                                        <button type="submit" class="btn btn-success">Submit</button>
+                                        <button type="submit" class="btn btn-success" onclick="calculateTotal()">Submit</button>
                                     </form>                          
                         </div>
                         <div class="legend">
