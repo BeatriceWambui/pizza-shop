@@ -14,24 +14,24 @@ $(document).ready(function(){
 
 var form = document.forms["orderform"]
 
-    var pizzaPrice = new Array()
-        pizzaSize["none"]=0;
-        pizzaSize["regular"]=500;
-        pizzaSize["meduim"]=700;
-        pizzaSize["mega"]=1000;
+    var pizzaPrice = new Array();
+        pizzaPrice["none"]=0;
+        pizzaPrice["regular"]=500;
+        pizzaPrice["meduim"]=700;
+        pizzaPrice["mega"]=1000;
 
 function getFlavor(){
-    var form=document.forms["orderForm"];
-    pizzaPrice=0;
-    size=form.elements["flavor"];
+   var pizzaPrice=0;
+    form=document.forms["orderForm"];
+    var flavor=forms.elements["flavor"];
     pizzaPrice=pizzaFlavor[flavor.value];
-    return pizzaFlavor;
+    return pizzaPrice;
 };
 
 function originalThinCrust(){
      var form =document.forms["orderForm"];
     originalThinCrust = 0 ;
-    originalThinCrust=form.elements["thincrust"];
+    originalThinCrust=forms.elements["thincrust"];
     if (thincrust.checked == true ){
         originalThinCrust=100;
     }

@@ -189,7 +189,7 @@
                                 </div>
                             </div>
                             <h2> MY ORDER FORM</h2>
-                                <form  id="orderform">
+                                <form  id="orderform" onsubmit="return false;">
                                   <div class="form-group">
                                         <label>NAME:</label>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                         <input type="text"  id="name" placeholder="Name...">  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
@@ -224,7 +224,7 @@
                                         </select> 
                                         <label>NO OF PIZZAS</label>  <input type="text"  name="pizzas" id="quantity" /> <br>
                                         <div id="totalPrice"></div>
-                                        <input type='button' id='myprice' value='see-price' onclick="calculatePrice()"/>
+                                        <input type='submit' id='myprice' value='see-price' onclick="calculatePrice()"/>
                                         <div class="show-total"></div>
                                 
                                         <label>Within CBD </label>
@@ -234,7 +234,7 @@
                                         
                                     </div>         
                                  </div>
-                                        <button type="submit" class="btn btn-success" onclick="calculatePrice()">Submit</button>
+                                        <button type="submit" class="btn btn-success">Submit</button>
                                     </form>                          
                         </div>
                         <div class="legend">
