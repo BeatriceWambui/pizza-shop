@@ -202,21 +202,21 @@
                                         
                                     <div class="form-group">
                                         <label>CRUST CHOISE</label> <br>
-                                        <input type="radio" name="crust" value="Original Thin Crust" id="thincrust" onclick="calculateTotal()" > Original Thin Crust (ksh 100) <br>
-                                        <input type="radio" name="crust" value="Pan-crust" id="pancrust" onclick="calculateTotal()" > Pan-crust (ksh150) <br>
-                                        <input type="radio" name="crust" value="Gluten Free" id="glutencrust" onclick="calculateTotal()" > Gluten Free (ksh 200) <br>
-                                        <input type="radio" name="crust" value="chees crust" id="cheescrust" onclick="calculateTotal()" > chees (ksh 250) <br>
+                                        <input type="checkbox" name="crust1" value="Original Thin Crust" id="thincrust" onclick="calculatePrice()" > Original Thin Crust (ksh 100) <br>
+                                        <input type="checkbox" name="crust2" value="Pan-crust" id="pancrust" onclick="calculatePrice()" > Pan-crust (ksh150) <br>
+                                        <input type="checkbox" name="crust3" value="Gluten Free" id="glutencrust" onclick="calculatePrice()" > Gluten Free (ksh 200) <br>
+                                        <input type="checkbox" name="crust4" value="chees crust" id="cheescrust" onclick="calculatePrice()" > chees (ksh 250) <br>
                                         <label>TOPPINGS</label> <br>
-                                        <input type="checkbox" name="topping1" id="cheese" onclick="calculateTotal()"> Extra Cheese  (ksh200) &nbsp; &nbsp; &nbsp;  
-                                        <input type="checkbox" name="topping2" id="pepperoni" onclick="calculateTotal()">Pepperoni (ksh200) <br>
-                                        <input type="checkbox" name="topping3" id="tomato" onclick="calculateTotal()">Extra tomato  (ksh200) &nbsp; &nbsp; &nbsp; &nbsp;  
-                                        <input type="checkbox" name="topping4" id="mushroom" onclick="calculateTotal()">Mushroom  (ksh200) <br>
-                                        <input type="checkbox" name="topping5" id="mexican" onclick="calculateTotal()">Mexican Cheese  (ksh200) &nbsp; 
-                                        <input type="checkbox" name="topping6" id="sausage" onclick="calculateTotal()">Sausage  (ksh200) <br>
-                                        <input type="checkbox" name="topping7" id="bell" onclick="calculateTotal()">Bell Peppers  (ksh200) &nbsp; &nbsp; &nbsp; &nbsp;  
-                                        <input type="checkbox" name="topping8" id="avacado" onclick="calculateTotal()">Avocado special  (ksh200) <br>
+                                        <input type="checkbox" name="topping1" id="cheese" onclick="calculatePrice()"> Extra Cheese  (ksh200) &nbsp; &nbsp; &nbsp;  
+                                        <input type="checkbox" name="topping2" id="pepperoni" onclick="calculatePrice()">Pepperoni (ksh200) <br>
+                                        <input type="checkbox" name="topping3" id="tomato" onclick="calculatePrice()">Extra tomato  (ksh200) &nbsp; &nbsp; &nbsp; &nbsp;  
+                                        <input type="checkbox" name="topping4" id="mushroom" onclick="calculatePrice()">Mushroom  (ksh200) <br>
+                                        <input type="checkbox" name="topping5" id="mexican" onclick="calculatePrice()">Mexican Cheese  (ksh200) &nbsp; 
+                                        <input type="checkbox" name="topping6" id="sausage" onclick="calculatePrice()">Sausage  (ksh200) <br>
+                                        <input type="checkbox" name="topping7" id="bell" onclick="calculatePrice()">Bell Peppers  (ksh200) &nbsp; &nbsp; &nbsp; &nbsp;  
+                                        <input type="checkbox" name="topping8" id="avacado" onclick="calculatePrice()">Avocado special  (ksh200) <br>
                                         <label>FLAVOR</label> 
-                                        <select id="flavor" name='flavor' onchange="calculateTotal()">
+                                        <select id="flavor" name='flavor' onchange="calculatePrice()">
                                             <option value="None">Select flavor</option>
                                             <option value="regular">Regular (Ksh.500)</option>
                                             <option value="medium">Medium (Ksh.700)</option>
@@ -234,7 +234,7 @@
                                         
                                     </div>         
                                  </div>
-                                        <button type="submit" class="btn btn-success" onclick="calculateTotal()">Submit</button>
+                                        <button type="submit" class="btn btn-success" onclick="calculatePrice()">Submit</button>
                                     </form>                          
                         </div>
                         <div class="legend">

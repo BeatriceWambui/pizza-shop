@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("form#form").submit(function(event){
+    $("form#orderform").submit(function(event){
         var name =$("input#name").val();
         var email =$("input#email").val();
         if ($("input#name").val() && $("input#email").val() && $("input#house").val() &&("input#area").val()&& $("input#flavor").val() !="" ){
@@ -29,7 +29,7 @@ function getFlavor(){
 };
 
 function originalThinCrust(){
-    form =document.forms["orderForm"];
+     var form =document.forms["orderForm"];
     originalThinCrust = 0 ;
     originalThinCrust=form.elements["thincrust"];
     if (thincrust.checked == true ){
@@ -71,7 +71,7 @@ function cheesCrust(){
 function extraChees(){
     form = document.forms["orderForm"];
     extraChees=0;
-    extrachees=forms.element["chees"];
+    extrachees=forms.elements["chees"];
     if (chees.checked == true){
         extraChees=200;
     }
@@ -81,7 +81,7 @@ function extraChees(){
 function pepperoni(){
     form = document.forms["orderForm"];
     pepperoni=0;
-    pepperoni=forms.element["pepperoni"];
+    pepperoni=forms.elements["pepperoni"];
     if(pepperoni.checked == true){
         pepperoni=200;
     }
@@ -91,7 +91,7 @@ function pepperoni(){
 function extraTomato(){
     form = document.forms["orderForm"];
     extraTomato=0;
-    extraTomato=forms.element["tomato"];
+    extraTomato=forms.elements["tomato"];
     if (tomato.chacked == true){
         extraTomato=200;
     }
@@ -101,7 +101,7 @@ function extraTomato(){
 function mushroom(){
     form = document.forms["orderForm"];
     mushroom=0;
-    mushroom=forms.element["mushroom"];
+    mushroom=forms.elements["mushroom"];
     if (mushroom.checked == true){
         mushroom=200;
     }
@@ -111,7 +111,7 @@ function mushroom(){
 function mexicanCheese(){
     form = document.forms["orderForm"];
     mexicanCheese=0;
-    mexicanCheese=forms.element["mexican"];
+    mexicanCheese=forms.elements["mexican"];
     if(mushroom.checked == true){
         mexicanCheese=200;
     }
@@ -119,9 +119,9 @@ function mexicanCheese(){
 }
 
 function sausage(){
-    form = document.forms["orderForm"];
+    var form = document.forms["orderForm"];
     sausage=0;
-    sausage=form.element["sausage"];
+    sausage=form.elements["sausage"];
     if(sausage.checked == true){
         sausage=200;
     }
@@ -129,9 +129,9 @@ function sausage(){
 }
 
 function bellPeppers(){
-    form = document.forms["orderForm"];
+    var form = document.forms["orderForm"];
     bellPeppers=0;
-    bellPeppers=form.element["bell"];
+    bellPeppers=form.elements["bell"];
     if(bell.checked == true){
         bellPeppers=200;
     }
@@ -139,9 +139,9 @@ function bellPeppers(){
 }
 
 function avacadoSpecial(){
-    form = document.forms["orderForm"];
+     var form = document.forms["orderForm"];
     avacadoSpecial=0;
-    avacadoSpecial=form.element["avacado"];
+    avacadoSpecial=form.elements["avacado"];
     if(avacado.checked == true){
         avacadoSpecial=200;
     }
@@ -149,21 +149,21 @@ function avacadoSpecial(){
 }
 
 function calculatePrice(){
-    totalPrice=(getFlavor() + originalThinCrust() + panCrust() + glutenFree() + cheesCrust() +
+    var totalPrice=(getFlavor() + originalThinCrust() + panCrust() + glutenFree() + cheesCrust() +
     extraChees() + pepperoni() +extraTomato() + mushroom() + mexicanCheese() + sausage() + bellPeppers() +avacadoSpecial())*getQuantity();
     var myPizza = document.getElementById("totalprice");
     myPizza.style.display="block";
-    myPizza.innerHTML = "The price is Ksh " + totalPrice
+    myPizza.innerHTML = "The price is Ksh " + totalPrice;
 }
 
 function getQuantity(){
-    form=document.form["orderForm"];
+    var form=document.form["orderForm"];
     pizzas=0;
-    quantity=form.element["quantity"];
+    var quantity=form.elements["quantity"];
     if(quantity.value !=""){
-        howMany=parseInt(quantity.value);
+        quantity=parseInt(quantity.value);
     }
-   return howMany;
+   return quantity;
 }
 
 
