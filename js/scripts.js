@@ -3,7 +3,7 @@ $(document).ready(function(){
         var name =$("input#name").val();
         var email =$("input#email").val();
         if ($("input#name").val() && $("input#email").val() && $("input#house").val() &&("input#area").val()&& $("input#flavor").val() !="" ){
-        alert ("**Dear " + name+ "** " + email + ". "+ "We are graced by your presence " + "**We have received your order we are going to deliver your pizza in a few minutes." );
+        alert ("Dear " + name+ " " + email + ". "+ "We are graced by your presence " + "We have received your order we are going to deliver your pizza in a few minutes." );
         }else{
             alert("Please enter convinient data.");
         }
@@ -23,7 +23,8 @@ var form = document.forms["orderform"]
 function getFlavor(){
     form=document.forms["orderform"];
     MyPizzaPrice = 0;
-    myFlavor=forms.elements["flavor"];
+    myFlavor=document.getElementById("flavor").selectedIndex.value(); 
+    alert(myFlavor);
     MyPizzaPrice=pizzaPrice[myFlavor.value];
     return MyPizzaPrice;
 };
