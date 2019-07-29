@@ -5,6 +5,7 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css">
         <script src="js/jquery.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/try.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Butcherman&display=swap" rel="stylesheet">
      <title>Pizza-shop</title>
@@ -201,31 +202,40 @@
                                         <input type="house address" id="house" placeholder="enter home address"><br>
                                         
                                     <div class="form-group">
+                                        
                                         <label>CRUST CHOISE</label> <br>
-                                        <input type="radio" name="crust" value="Original Thin Crust" id="thincrust" onclick="calculatePrice()" > Original Thin Crust (ksh 100) <br>
-                                        <input type="radio" name="crust" value="Pan-crust" id="pancrust" onclick="calculatePrice()" > Pan-crust (ksh150) <br>
-                                        <input type="radio" name="crust" value="Gluten Free" id="glutencrust" onclick="calculatePrice()" > Gluten Free (ksh 200) <br>
-                                        <input type="radio" name="crust" value="chees crust" id="cheescrust" onclick="calculatePrice()" > chees (ksh 250) <br>
+                                        <select id="crust" name='crusts'>
+                                            <option value="none" >Select size</option>
+                                            <option name="crust" value="Pan-crust" id="pancrust" >Pan-crust (ksh100)</option>
+                                            <option name="crust" value="Original Thin Crust" id="thincrust" >Original Thin Crust (ksh 150)</option>
+                                            <option name="crust" value="Gluten Free" id="glutencrust" >Gluten Free (ksh 200)</option>
+                                            <option name="crust" value="chees crust" id="cheescrust" >Chees (ksh 250)</option>
+                                        </select> <br>
                                         <label>TOPPINGS</label> <br>
-                                        <input type="checkbox" name="topping1" id="cheese" onclick="calculatePrice()"> Extra Cheese  (ksh200) &nbsp; &nbsp; &nbsp;  
-                                        <input type="checkbox" name="topping2" id="pepperoni" onclick="calculatePrice()">Pepperoni (ksh200) <br>
-                                        <input type="checkbox" name="topping3" id="tomato" onclick="calculatePrice()">Extra tomato  (ksh200) &nbsp; &nbsp; &nbsp; &nbsp;  
-                                        <input type="checkbox" name="topping4" id="mushroom" onclick="calculatePrice()">Mushroom  (ksh200) <br>
-                                        <input type="checkbox" name="topping5" id="mexican" onclick="calculatePrice()">Mexican Cheese  (ksh200) &nbsp; 
-                                        <input type="checkbox" name="topping6" id="sausage" onclick="calculatePrice()">Sausage  (ksh200) <br>
-                                        <input type="checkbox" name="topping7" id="bell" onclick="calculatePrice()">Bell Peppers  (ksh200) &nbsp; &nbsp; &nbsp; &nbsp;  
-                                        <input type="checkbox" name="topping8" id="avacado" onclick="calculatePrice()">Avocado special  (ksh200) <br>
+                                        <input type="checkbox" name="topping" value="Extra Cheese" id="cheese" > Extra Cheese  (ksh200) &nbsp; &nbsp; &nbsp;  
+                                        <input type="checkbox" name="topping" value="Pepperoni" id="pepperoni">Pepperoni (ksh200) <br>
+                                        <input type="checkbox" name="topping" value="Extra tomato" id="tomato" >Extra tomato  (ksh200) &nbsp; &nbsp; &nbsp; &nbsp;  
+                                        <input type="checkbox" name="topping" value="Mushroom" id="mushroom" >Mushroom  (ksh200) <br>
+                                        <input type="checkbox" name="topping" value="Mexican Cheese" id="mexican" >Mexican Cheese  (ksh200) &nbsp; 
+                                        <input type="checkbox" name="topping" value="Sausage" id="sausage" >Sausage  (ksh200) <br>
+                                        <input type="checkbox" name="topping" value="Bell Peppers" id="bell" >Bell Peppers  (ksh200) &nbsp; &nbsp; &nbsp; &nbsp;  
+                                        <input type="checkbox" name="topping" value="Avacado special" id="avacado" >Avocado special  (ksh200) <br>
                                         <label>FLAVOR</label> 
-                                        <select id="flavor" name='flavor' onchange="calculatePrice()">
-                                            <option id="none" value="">Select flavor</option>
-                                            <option id="regular" value="500">Regular (Ksh.500)</option>
-                                            <option id="medium" value="700">Medium (Ksh.700)</option>
-                                            <option id="mega" value="1000">Mega (Ksh.1000)</option>
+                                        <select id="flavor" name='flavor' >
+                                            <option value="none" >Select size</option>
+                                            <option value="regular" >Regular (Ksh.500)</option>
+                                            <option value="medium" >Medium (Ksh.700)</option>
+                                            <option value="mega" >Mega (Ksh.1000)</option>
                                         </select> 
                                         <label>NO OF PIZZAS</label>  <input type="text"  name="pizzas" id="quantity" /> <br>
                                         <div id="totalPrice"></div>
-                                        <input type='submit' id='myprice' value='see-price' onclick="calculatePrice()"/>
-                                        <div class="show-total"></div>
+                                        <input type='submit' id="myprice" value="checkout">
+                                        <div class="show-total">
+                                            <p id="outputcrust"></p>
+                                            <p id="outputtopping"></p>
+                                            <p id="outputsize"></p>
+                                            <p id="outputtotal"></p>
+                                        </div>
                                 
                                         <label>Within CBD </label>
                                         <button>delivery=200ksh</button>  &nbsp; &nbsp;
