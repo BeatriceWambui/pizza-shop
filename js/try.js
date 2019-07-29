@@ -2,8 +2,10 @@ var pizzasizeprice, crustprice, total;
 
 $(document).ready(function(){
     $("#myprice").click(function(event){
+        $(".show-total").show();
         var size = $("#flavor option:selected").val();
         var crust = $("#crust option:selected").val();
+        var quantity = parseInt($("#quantity").val());
         var topping =[];
         $.each($('input[name="topping"]:checked'),function(){
             topping.push($(this).val());
@@ -37,10 +39,20 @@ $(document).ready(function(){
     $("#outputcrust").html(crust);
     $("#outputtopping").html(topping);
     $("#outputsize").html(size);
-        console.log(crustprice);
+    
+
+    console.log(crustprice);
         console.log(pizzasizeprice);
         console.log(topping);
-        console.log(total)
+        console.log(total);
+
+    if(quantity !=""){
+        var quantityTotal = total* quantity;
+        console.log(total);
+        $("#outputtotal").html(quantityTotal);
+    }
+
+        
 
         event.preventDefault();
     })
