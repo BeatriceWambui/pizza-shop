@@ -58,9 +58,14 @@ h2{
     height:200px;
     width:280px;
 }
-#image1,#image2,#image3,#image4,#image5,#image6,#image7,#image8{
-    padding-left:10%;
-    padding-top:5%
+#image1,#image2,#image3,#image4,#image5,#image6,#image7{
+    padding-left:5%;
+    padding-top:5%;
+}
+#image8{
+    padding-left:1%;
+    padding-top:5%;
+    width:260px;
 }
 #about{
     padding-top:5%;
@@ -91,12 +96,12 @@ table,th,td{
 }
 table, tr{
     width:200px;
-    padding-top:5%;
-    padding-left:5%;
 }
-#table4,#table5,#table6{
-    margin-top:10px;
+#table1,#table2,#table3, #table4,#table5,#table6{
+    margin-top:5%;
+    margin-left:15%;
 }
+
 .footer{
     float:right;
     padding-right: 35%;
