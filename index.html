@@ -226,7 +226,7 @@
                                             <option value="medium" >Medium (Ksh.700)</option>
                                             <option value="mega" >Mega (Ksh.1000)</option>
                                         </select> 
-                                        <label>NO OF PIZZAS</label>  <input type="text"  name="pizzas" id="quantity" /> <br>
+                                        <label>NO OF PIZZAS</label>  <input type="number"  name="pizzas" id="quantity" /> <br>
                                         <div id="totalPrice"></div>
                                         <input type='submit' id="myprice" value="checkout"><br><br>
                                         <div class="show-total">
@@ -240,15 +240,15 @@
                                             <h5>your pizza price:</h5>
                                             <p id="outputtotal"></p>
                                         </div>
-                                
-                                        <label>Within CBD </label>
-                                        <button>delivery=200ksh</button>  &nbsp; &nbsp;
-                                        <label>outside CBD</label>
-                                        <button>delivery=400ksh</button> <br>
-                                        
+                                        <div id="delivery">
+                                            <label>Within CBD </label>
+                                            <button >delivery=200ksh</button>  &nbsp; &nbsp;
+                                        <!-- <label>outside CBD</label>
+                                        <button>delivery=400ksh</button> <br> -->
+                                        </div>
                                     </div>         
                                  </div>
-                                        <button type="submit" class="btn btn-success" >Submit</button>
+                                        <button type="submit" class="btn btn-success" id="submit">Submit</button>
                                     </form>                          
                         </div>
                         <div class="legend">

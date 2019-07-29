@@ -112,3 +112,6 @@ h5{
     font-size:20px;
     font-family: 'Butcherman', cursive;
 }
+#delivery{
+    display: none;
+}

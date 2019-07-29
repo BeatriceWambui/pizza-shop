@@ -3,6 +3,7 @@ var pizzasizeprice, crustprice, total;
 $(document).ready(function(){
     $("#myprice").click(function(event){
         $(".show-total").show();
+        $("#delivery").show();
         var size = $("#flavor option:selected").val();
         var crust = $("#crust option:selected").val();
         var quantity = parseInt($("#quantity").val());
@@ -50,10 +51,14 @@ $(document).ready(function(){
         var quantityTotal = total* quantity;
         console.log(total);
         $("#outputtotal").html(quantityTotal);
-    }
+    }    
+    event.preventDefault();
 
-        
-
-        event.preventDefault();
-    })
-})
+    $("#submit").click(function(){
+        var name =$("#name").val();
+        var finalTotal = quantityTotal+200;
+        alert("Thankyou " + name  + ". "+ "Your total price and delivery is "+finalTotal);
+    });
+    });
+   
+});
